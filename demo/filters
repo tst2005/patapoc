@@ -1,0 +1,15 @@
+
+grep1() {
+	grep /bin/bash;
+}
+grep2() {
+	grep -v ':x:1[0-9][0-9][0-9]:';
+}
+
+grep3() {
+	grep -v '^root:';
+}
+
+default() {
+	grep1 | grep2 | grep3;
+}

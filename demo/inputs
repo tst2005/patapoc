@@ -1,0 +1,6 @@
+cat1() {
+	cat /etc/passwd;
+}
+default() {
+	cat1;
+}

@@ -1,0 +1,15 @@
+
+cut1() {
+	cut -d: -f1,3-4
+}
+
+cut2() {
+	cut -d: -f1
+}
+sort1() {
+	sort
+}
+
+default() {
+	cut1 | sort1
+}
